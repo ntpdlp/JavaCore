@@ -33,6 +33,6 @@ public class ImmutableFields {
         shape.setBanKinh(1.0f);
         System.out.println("Chu vi la: " + shape.tinhChuVi());
 
-        //another solution for final fields: enum
+        //=> another solution for final fields: enum
     }
 }
