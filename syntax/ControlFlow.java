@@ -20,5 +20,5 @@ public class ControlFlow {
                 System.out.println("Odd");
         }
     }
-    
+
 }
