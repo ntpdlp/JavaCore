@@ -1,11 +1,11 @@
 package basic.syntax.classobject;
 
-public class ImmutableFields {
+public class FinalFields {
 
     final private float MY_PI;
     private float banKinh;
 
-    public ImmutableFields(float my_pi, float banKinh) {
+    public FinalFields(float my_pi, float banKinh) {
         this.MY_PI = my_pi;
         this.banKinh = banKinh;
     }
@@ -27,7 +27,7 @@ public class ImmutableFields {
     }
 
     public static void main(String[] args) {
-        ImmutableFields shape = new ImmutableFields(3.14f,2.5f);
+        FinalFields shape = new FinalFields(3.14f,2.5f);
         System.out.println("Chu vi la: " + shape.tinhChuVi());
 
         shape.setBanKinh(1.0f);
