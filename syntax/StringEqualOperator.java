@@ -22,12 +22,20 @@ public class StringEqualOperator {
 //        System.out.println("6." + str1.equals(str3)); //true
 
 
-        //* 2. sort Strings *//
-        System.out.println("negative return because a<b: " + "a".compareTo("b"));
-        System.out.println("positive return because c>b: " + "c".compareTo("b"));
-        System.out.println("zero return because a=a: " + "a".compareTo("a"));
+//        //* 2. sort Strings *//
+//        System.out.println("negative return because a<b: " + "a".compareTo("b"));
+//        System.out.println("positive return because c>b: " + "c".compareTo("b"));
+//        System.out.println("zero return because a=a: " + "a".compareTo("a"));
 
+//        //* 3. split by delimiter , using | operator *//
+//        String t = "Hello,strings can be fun.They have many uses.";
+//        String[] subs = t.split(",| |\\.");
+//
+//        for(String x:subs) {
+//            System.out.println(x);
+//        }
 
+        //* 4. StringBuilder is single-threaded *//
 
     }
 
