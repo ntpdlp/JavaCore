@@ -1,5 +1,7 @@
 package basic.syntax;
 
+import java.util.StringJoiner;
+
 public class StringEqualOperator {
 
     public static void main(String[] args) {
@@ -37,6 +39,12 @@ public class StringEqualOperator {
 
         //* 4. StringBuilder is single-threaded *//
 
+        //* StringJoiner *//
+        StringJoiner stringJoiners = new StringJoiner(",","[","]");
+        stringJoiners.add("Java");
+        stringJoiners.add("Javascript");
+        stringJoiners.add("Selenium");
+        System.out.println(stringJoiners.toString());
     }
 
 }
