@@ -1,4 +1,4 @@
-package basic.syntax.oop_abstract;
+package basic.syntax.oop.oop_abstract;
 
 final public class Circle extends ClosedCurve{
     double radius;

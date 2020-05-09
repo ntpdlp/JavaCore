@@ -1,4 +1,4 @@
-package basic.syntax.interfaceDiamondProblem;
+package basic.syntax.interfacejava.diamondproblem;
 
 public class C1 {
 

@@ -1,4 +1,4 @@
-package basic.syntax.oop_abstract;
+package basic.syntax.oop.oop_abstract;
 
 abstract public class ClosedCurve {
     abstract double computeArea();
