@@ -1,4 +1,4 @@
-package basic.syntax.oop.oop_abstract;
+package basic.syntax.oop_abstract;
 
 final public class Square extends ClosedCurve {
     double side;

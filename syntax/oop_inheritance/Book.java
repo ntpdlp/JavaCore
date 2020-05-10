@@ -1,4 +1,4 @@
-package basic.syntax.oop.oop_inheritance;
+package basic.syntax.oop_inheritance;
 
 public class Book {
     private String title;
@@ -38,5 +38,13 @@ public class Book {
     @Override
     public String toString(){
         return "title: " + title + ", author: " + author + ", price: "  + price ;
+    }
+
+    @Override
+    public boolean equals(Object book){
+        if(book == null) return false;
+        if(this.getClass() != book.getClass()) return false;
+        Book aBook = (Book) book;
+        return (this.getTitle().equals(aBook.getTitle()) && this.getPrice()==aBook.getPrice() && this.getAuthor().equals(aBook.getAuthor()));
     }
 }

@@ -1,4 +1,4 @@
-package basic.syntax.interfacejava.diamondproblem;
+package basic.syntax.diamondproblem;
 
 public class Main implements I1,I2{
 

@@ -1,4 +1,4 @@
-package basic.syntax.oop.oop_abstract;
+package basic.syntax.oop_abstract;
 
 public class TestAbstractClass {
     public static void main(String[] args) {

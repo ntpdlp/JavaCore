@@ -1,4 +1,4 @@
-package basic.syntax.interfacejava.functionalinterface;
+package basic.syntax.functionalinterface;
 
 @FunctionalInterface
 public interface MyFunctionalInterface {

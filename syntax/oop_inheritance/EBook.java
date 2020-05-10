@@ -1,4 +1,4 @@
-package basic.syntax.oop.oop_inheritance;
+package basic.syntax.oop_inheritance;
 
 public class EBook extends Book {
     private float fileSize;

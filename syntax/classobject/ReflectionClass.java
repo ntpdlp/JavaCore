@@ -33,11 +33,21 @@ class Person{
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public boolean equals(Object aPerson){
+        if(aPerson == null) return false;
+        if(this.getClass() != aPerson.getClass()) return false;
+        Person p = (Person)aPerson;
+        return (name.equals(p.getName()) && age == p.getAge());
+    }
 }
 
 public class ReflectionClass {
     public static void main(String[] args) throws NoSuchMethodException, NoSuchFieldException {
         Person p1 = new Person(18,"Grit");
+        Person p2 = new Person(18,"Grit");
+        System.out.println(p1.equals(p2));
 
         Class objClass = Person.class;
         // ClassName = Pakage + SimpleName
@@ -49,16 +59,16 @@ public class ReflectionClass {
         System.out.println("Constructors: " + Arrays.toString(constructors));
 //        Constructor constructor1 = objClass.getConstructor(int.class, String.class);
 //        System.out.println("Constructor: " + constructor1);
-
-        Method[] methods = objClass.getMethods();
-        for(Method m:methods){
-            System.out.println(m.toString());
-        }
-
-        Field[] fields = objClass.getFields();
-        for(Field field:fields){
-            System.out.println(field.getName());
-        }
+//
+//        Method[] methods = objClass.getMethods();
+//        for(Method m:methods){
+//            System.out.println(m.toString());
+//        }
+//
+//        Field[] fields = objClass.getFields();
+//        for(Field field:fields){
+//            System.out.println(field.getName());
+//        }
 
     }
 }

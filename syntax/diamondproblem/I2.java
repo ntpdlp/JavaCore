@@ -1,4 +1,4 @@
-package basic.syntax.interfacejava.diamondproblem;
+package basic.syntax.diamondproblem;
 
 public interface I2 {
     default void defaultFunc(){
