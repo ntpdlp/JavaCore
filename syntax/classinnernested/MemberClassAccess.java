@@ -1,6 +1,6 @@
 package basic.syntax.classinnernested;
 
-public class AccessMemberClass {
+public class MemberClassAccess {
     private String outerText = "I am outer";
     public class InnerClass{
         public String innerText = "I am inner";
@@ -17,11 +17,11 @@ public class AccessMemberClass {
 
     public static void main(String[] args) {
         //access 1
-        AccessMemberClass obj = new AccessMemberClass();
+        MemberClassAccess obj = new MemberClassAccess();
         obj.printOuter();
 
         //access 2
-        InnerClass innerClass = new AccessMemberClass().new InnerClass();
+        InnerClass innerClass = new MemberClassAccess().new InnerClass();
         innerClass.printInner();
     }
 }
