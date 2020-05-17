@@ -1,4 +1,4 @@
-package basic.syntax;
+package basic.syntax.stringarray;
 
 import java.util.Scanner;
 
