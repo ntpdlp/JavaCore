@@ -3,6 +3,7 @@ package basic.listArrayListLinkedList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedListOperators {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class LinkedListOperators {
         System.out.println(linkedLists);
 
         //init with value
-        LinkedList<Float> floats = new LinkedList<>(Arrays.asList(12.0f,35.2f,3.0f,0.0f, 60.7f));
+        List<Float> floats = new LinkedList<>(Arrays.asList(12.0f,35.2f,3.0f,0.0f, 60.7f));
         Collections.sort(floats);
         System.out.println(floats);
         int pos = Collections.binarySearch(floats,12.0f);

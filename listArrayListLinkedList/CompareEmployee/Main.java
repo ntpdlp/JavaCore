@@ -10,7 +10,7 @@ public class Main {
         Employee emp1 = new Employee("Vo",2018,8,17);
         Employee emp2 = new Employee("Vo",2017,8,17);
         System.out.println(emp1.equals(emp2));
-        
+
         List<Employee> employees = new ArrayList<>();
         employees.add(emp1);
         employees.add(emp2);

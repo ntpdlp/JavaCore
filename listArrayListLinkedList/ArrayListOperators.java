@@ -3,12 +3,13 @@ package basic.listArrayListLinkedList;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class ArrayListOperators {
 
     public static void main(String[] args) {
         //any data type: Object
-        ArrayList randomArrayList = new ArrayList();
+        List randomArrayList = new ArrayList();
         randomArrayList.add(1);
         randomArrayList.add("Hello");
         randomArrayList.add("World");
@@ -20,7 +21,7 @@ public class ArrayListOperators {
         System.out.println();
 
         //specific data type: String
-        ArrayList<String> strings = new ArrayList<>();
+        List<String> strings = new ArrayList<>();
         strings.add("Winners");
         strings.add("never");
         strings.add("quit");
@@ -32,12 +33,12 @@ public class ArrayListOperators {
         strings.remove("quit");
         System.out.println(strings);
 
-        ArrayList<Integer> integers = new ArrayList<>(Arrays.asList(12,5,9,17,99,10));
+        List<Integer> integers = new ArrayList<>(Arrays.asList(12,5,9,17,99,10));
         Collections.sort(integers);
         System.out.println(integers);
 
         //declare ArrayList asList
-        ArrayList<String> strings1 = new ArrayList<>(Arrays.asList("Winner", "never", "quit", "and", "Quitter", "never", "win"));
+        List<String> strings1 = new ArrayList<>(Arrays.asList("Winner", "never", "quit", "and", "Quitter", "never", "win"));
         Collections.sort(strings1);
         System.out.println("Ascend order: " + strings1);
         int pos = Collections.binarySearch(strings1,"Winner");
