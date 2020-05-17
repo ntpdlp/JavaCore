@@ -1,4 +1,4 @@
-package basic.syntax.anonymous;
+package basic.syntax.anonymousLambdaExp;
 
 interface Animal{
     void eat();
