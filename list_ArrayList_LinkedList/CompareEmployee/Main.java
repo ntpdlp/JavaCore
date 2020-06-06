@@ -1,4 +1,4 @@
-package basic.listArrayListLinkedList.CompareEmployee;
+package basic.list_ArrayList_LinkedList.CompareEmployee;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,8 +1,7 @@
-package basic.listArrayListLinkedList.CompareEmployee;
+package basic.list_ArrayList_LinkedList.CompareEmployee;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.Objects;
 
 public class Employee {
     private String name;
