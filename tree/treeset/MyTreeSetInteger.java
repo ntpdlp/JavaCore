@@ -1,6 +1,4 @@
-package basic.set_sorted_treeset;
-
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
+package basic.treeset;
 
 import java.util.Iterator;
 import java.util.TreeSet;
@@ -29,9 +27,18 @@ public class MyTreeSetInteger {
         integers.add(20);
         integers.add(15);
         integers.add(0);
-
         printMyTreeSet(integers);
         printMyTreeSetDescending(integers);
+        System.out.println(integers);
+        System.out.println(integers.descendingSet());
 
+        TreeSet<String> strings = new TreeSet<>();
+        strings.add("banana");
+        strings.add("tomato");
+        strings.add("strawberry");
+        strings.add("orange");
+        strings.add("apple");
+        strings.add("wiki");
+        System.out.println(strings);
     }
 }

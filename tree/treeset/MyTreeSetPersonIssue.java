@@ -1,30 +1,17 @@
-package basic.set_sorted_treeset;
+package basic.treeset;
 
-import java.util.Comparator;
 import java.util.TreeSet;
 
-public class MyTreeSetPersonSolutionOne {
+public class MyTreeSetPersonIssue {
+
     public static void main(String[] args) {
-        class Person implements Comparable<Person> {
+        class Person{
             private String name;
             private int age;
 
             Person(String name, int age){
                 this.name = name;
                 this.age = age;
-            }
-
-            @Override
-            public int compareTo(Person o) {
-                //first sort by age
-                if(this.age<o.age) return -1;
-                if(this.age == o.age){
-                //then sort by name
-                    if(this.name.compareTo(o.name)<0) return -1;
-                    if(this.name.compareTo(o.name)==0) return 0;
-                    return 1;
-                }
-                return 1;
             }
 
             @Override
@@ -36,10 +23,10 @@ public class MyTreeSetPersonSolutionOne {
             }
         }
 
+        // Issue: when executing, will fail because Tree is order type, it doesn't know how to compare 2 Person
         TreeSet<Person> personTreeSet = new TreeSet<Person>();
         personTreeSet.add(new Person("Vo",20));
         personTreeSet.add(new Person("Adnan",18));
-        personTreeSet.add(new Person("John",18));
         personTreeSet.add(new Person("Eden",28));
         System.out.println(personTreeSet);
     }
